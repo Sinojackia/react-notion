@@ -1,95 +1,95 @@
 import * as React from "react";
 
-import { BlockMapType, MapPageUrl, MapImageUrl } from "../types";
+import {BlockMapType, MapPageUrl, MapImageUrl} from "../types";
 import PageIcon from "./page-icon";
 
 interface PageHeaderProps {
-  blockMap: BlockMapType;
-  mapPageUrl: MapPageUrl;
-  mapImageUrl: MapImageUrl;
+    blockMap: BlockMapType;
+    mapPageUrl: MapPageUrl;
+    mapImageUrl: MapImageUrl;
 }
 
 const PageHeader: React.FC<PageHeaderProps> = ({
-  blockMap,
-  mapPageUrl,
-  mapImageUrl
-}) => {
-  const blockIds = Object.keys(blockMap);
-  const activePageId = blockIds[0];
+                                                   blockMap,
+                                                   mapPageUrl,
+                                                   mapImageUrl
+                                               }) => {
+    const blockIds = Object.keys(blockMap);
+    const activePageId = blockIds[0];
 
-  if (!activePageId) {
-    return null;
-  }
-
-  const breadcrumbs = [];
-  let currentPageId = activePageId;
-
-  do {
-    const block = blockMap[currentPageId];
-    if (!block || !block.value) {
-      break;
+    if (!activePageId) {
+        return null;
     }
 
-    const title = block.value.properties?.title[0][0];
-    const icon = (block.value as any).format?.page_icon;
+    const breadcrumbs = [];
+    let currentPageId = activePageId;
 
-    if (!(title || icon)) {
-      break;
-    }
+    do {
+        const block = blockMap[currentPageId];
+        if (!block || !block.value) {
+            break;
+        }
 
-    breadcrumbs.push({
-      block,
-      active: currentPageId === activePageId,
-      pageId: currentPageId,
-      title,
-      icon
-    });
+        const title = block.value.properties?.title[0][0];
+        const icon = (block.value as any).format?.page_icon;
 
-    const parentId = block.value.parent_id;
+        if (!(title || icon)) {
+            break;
+        }
 
-    if (!parentId) {
-      break;
-    }
+        breadcrumbs.push({
+            block,
+            active: currentPageId === activePageId,
+            pageId: currentPageId,
+            title,
+            icon
+        });
 
-    currentPageId = parentId;
-  } while (true);
+        const parentId = block.value.parent_id;
 
-  breadcrumbs.reverse();
+        if (!parentId) {
+            break;
+        }
 
-  return (
-    <header className="notion-page-header">
-      <div className="notion-nav-breadcrumbs">
-        {breadcrumbs.map((breadcrumb, index) => (
-          <React.Fragment key={breadcrumb.pageId}>
-            <a
-              className={`notion-nav-breadcrumb ${
-                breadcrumb.active ? "notion-nav-breadcrumb-active" : ""
-              }`}
-              href={
-                breadcrumb.active ? undefined : mapPageUrl(breadcrumb.pageId)
-              }
-            >
-              {breadcrumb.icon && (
-                <PageIcon
-                  className="notion-nav-icon"
-                  block={breadcrumb.block}
-                  mapImageUrl={mapImageUrl}
-                />
-              )}
+        currentPageId = parentId;
+    } while (true);
 
-              {breadcrumb.title && (
-                <span className="notion-nav-title">{breadcrumb.title}</span>
-              )}
-            </a>
+    breadcrumbs.reverse();
 
-            {index < breadcrumbs.length - 1 && (
-              <span className="notion-nav-spacer">/</span>
-            )}
-          </React.Fragment>
-        ))}
-      </div>
-    </header>
-  );
+    return (
+        <header className="notion-page-header">
+            <div className="notion-nav-breadcrumbs">
+                {breadcrumbs.map((breadcrumb, index) => (
+                    <React.Fragment key={breadcrumb.pageId}>
+                        <a
+                            className={`notion-nav-breadcrumb ${
+                                breadcrumb.active ? "notion-nav-breadcrumb-active" : ""
+                            }`}
+                            href={
+                                breadcrumb.active ? undefined : mapPageUrl(breadcrumb.pageId)
+                            }
+                        >
+                            {breadcrumb.icon && (
+                                <PageIcon
+                                    className="notion-nav-icon"
+                                    block={breadcrumb.block}
+                                    mapImageUrl={mapImageUrl}
+                                />
+                            )}
+
+                            {breadcrumb.title && (
+                                <span className="notion-nav-title">{breadcrumb.title}</span>
+                            )}
+                        </a>
+
+                        {index < breadcrumbs.length - 1 && (
+                            <span className="notion-nav-spacer">/</span>
+                        )}
+                    </React.Fragment>
+                ))}
+            </div>
+        </header>
+    );
 };
 
 export default PageHeader;
