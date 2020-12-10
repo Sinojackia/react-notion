@@ -1,0 +1,793 @@
+{
+  "d740c9d4-52d0-4722-9a08-048e09e88f2f": {
+    "notion_user": {
+      "d740c9d4-52d0-4722-9a08-048e09e88f2f": {
+        "role": "editor",
+        "value": {
+          "id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "version": 6,
+          "email": "gorpher101@gmail.com",
+          "given_name": "xia",
+          "family_name": "wu",
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/9f17fb15-91d4-426b-9b16-75a7e731a49d/12275804.png",
+          "onboarding_completed": true,
+          "mobile_onboarding_completed": true
+        }
+      }
+    },
+    "user_root": {
+      "d740c9d4-52d0-4722-9a08-048e09e88f2f": {
+        "role": "editor",
+        "value": {
+          "id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "version": 4,
+          "space_views": [
+            "e85dee7c-4762-415f-a239-12fbdff2c822"
+          ]
+        }
+      }
+    },
+    "user_settings": {
+      "d740c9d4-52d0-4722-9a08-048e09e88f2f": {
+        "role": "editor",
+        "value": {
+          "id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "version": 11,
+          "settings": {
+            "type": "personal",
+            "locale": "en-US",
+            "persona": "personal",
+            "time_zone": "Asia/Shanghai",
+            "signup_time": 1589968960924,
+            "used_ios_app": true,
+            "used_mac_app": true,
+            "preferred_locale": "en-US",
+            "used_windows_app": true,
+            "start_day_of_week": 0,
+            "used_desktop_web_app": true,
+            "preferred_locale_origin": "legacy"
+          }
+        }
+      }
+    },
+    "space_view": {
+      "e85dee7c-4762-415f-a239-12fbdff2c822": {
+        "role": "editor",
+        "value": {
+          "id": "e85dee7c-4762-415f-a239-12fbdff2c822",
+          "version": 54,
+          "space_id": "3ea7938e-8bf6-4e62-b6bd-cc394d53c099",
+          "parent_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "parent_table": "user_root",
+          "alive": true,
+          "notify_mobile": true,
+          "notify_desktop": true,
+          "notify_email": true,
+          "visited_templates": [
+            "2dddc8c5-a711-4aa2-b5b3-ff952a49bcfa",
+            "7e89f436-7aac-4f66-b0a6-6e65ec868d2a",
+            "b7572331-51ab-4ed5-a931-5a7d34b08bf0",
+            "ba43b46e-4ad3-47f7-95f0-58a3ba01476f",
+            "88c9c2b0-d732-4342-8963-0580a4725571",
+            "406a00cf-3405-41c6-90a1-220a6136a709",
+            "28cdb7ca-6aea-4692-b6c2-765af9b730f0",
+            "15490c10-f02f-4181-899b-b5cb0dd49b9d",
+            "15bc1bd8-36ec-4da3-8c0c-e4eb4b3987fb",
+            "b47c6392-fb65-4876-bf74-31d32b3ce029",
+            "1668091a-3470-4bab-8ecc-c29aa59dedaa",
+            "60fef2a5-653c-4b49-aa46-442a649fc745",
+            "ab02c5e7-f589-4948-b820-6a2fed357258",
+            "be259732-30cb-4924-b294-8d4456be75c8",
+            "1beddf02-2e99-4bcd-9d26-d2c54ef57d6a",
+            "20f83114-dc15-488e-b568-4c8c29821a4b",
+            "ecd6a49a-a4f3-4ccb-a9e2-beb52349ad2c",
+            "c84d688d-40ea-451a-a668-20903d55a07d",
+            "a444e313-8f68-41a3-8aaa-6c0a79a11877",
+            "ceec90ff-1baf-4b10-99a3-36a156efa8d5",
+            "c53ade3a-63fe-4aaf-a3b1-df3065825f10",
+            "19480bed-a454-4776-88c8-30aa889d5dc8",
+            "8cd75f36-c8e2-475b-9b85-e3d8b5da3949",
+            "9f728f06-8cfe-43b0-b722-0adf4ca9490a",
+            "e35efd61-b892-45ee-871d-985f7dcc9391",
+            "b4f3c70e-0db7-43bc-9f66-5d928a7fd319",
+            "3696231c-a6f8-4dc0-86ad-1eeee135db35",
+            "4fa28a2c-36f3-4c3d-bd6c-091933f5ef68",
+            "deaf16ee-fa75-454b-a0fc-87893bb3cff6",
+            "1afd9231-27c8-400d-8d2c-3214b04131f2",
+            "8cc5e57b-88ee-42da-8446-33114e57ed18",
+            "9e8b54b2-62d1-417b-9bf7-ce5c253f9e3a",
+            "d3646628-7160-4f0a-a37d-e2817a0d0072",
+            "c680a5e3-b026-41d1-8c34-525aefa5f548",
+            "caa75ce9-bf98-427b-89f6-73e23bca515d",
+            "8fd5d405-3006-4243-8f8d-d5d3ea7b6849",
+            "0b96ad6a-e892-4959-ad89-a1653e597052",
+            "e95c342a-414a-4b4f-9945-fac166f226f0",
+            "d345d660-6bcd-4f8b-925e-633be61b70ca",
+            "45d8eefa-f132-498c-9577-ae3cbb8c4100",
+            "4e6134a4-f094-4260-b7e5-0a2c2c1122d7",
+            "41f0a2b5-63d2-48c4-9dba-561d4ade418c",
+            "b85dfb9c-e3b8-4cce-9e91-0efd81cb8f71",
+            "870e9815-7ae0-48f9-94fa-b7b81cddcaf0",
+            "6e388c17-fd6d-482a-adab-bbd51629ba07",
+            "fd90f555-7318-46a4-8c66-db990f7b0c88",
+            "98d6f6ab-9fcd-4021-a731-66101eacf132"
+          ],
+          "sidebar_hidden_templates": [
+            "be259732-30cb-4924-b294-8d4456be75c8",
+            "45d8eefa-f132-498c-9577-ae3cbb8c4100",
+            "60fef2a5-653c-4b49-aa46-442a649fc745"
+          ],
+          "joined": true
+        }
+      }
+    },
+    "space": {
+      "3ea7938e-8bf6-4e62-b6bd-cc394d53c099": {
+        "role": "editor",
+        "value": {
+          "id": "3ea7938e-8bf6-4e62-b6bd-cc394d53c099",
+          "version": 65,
+          "name": "xia's Notion",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f"
+            }
+          ],
+          "icon": "https://lh3.googleusercontent.com/a-/AOh14GhPp-2c-LmImQnk3yHLp2NHzGUNFBdfOtINNrFE=s100",
+          "beta_enabled": false,
+          "pages": [
+            "ab3505fc-c4d9-4b8c-b0a2-3957d5895ba8",
+            "86e0e84c-6dd7-401b-a864-59e452efc63a",
+            "b2b279ce-c8ab-490e-baef-ec595ea9bfd9"
+          ],
+          "created_time": 1589968966327,
+          "last_edited_time": 1605770100000,
+          "created_by_table": "notion_user",
+          "created_by_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "shard_id": 245913,
+          "plan_type": "personal",
+          "invite_link_code": "4fedf6d592737eb950aef3ac17c70c85c5c10df3",
+          "invite_link_enabled": true
+        }
+      }
+    },
+    "block": {
+      "ab3505fc-c4d9-4b8c-b0a2-3957d5895ba8": {
+        "role": "editor",
+        "value": {
+          "id": "ab3505fc-c4d9-4b8c-b0a2-3957d5895ba8",
+          "version": 163,
+          "type": "collection_view_page",
+          "view_ids": [
+            "103bb026-6c23-47ed-89d0-dea1fb88cd3a",
+            "bcc28b2c-73c9-42e1-8bed-cacac5f5111a",
+            "3e00a2ec-45dc-4a43-967f-5aefbdf6cc69"
+          ],
+          "collection_id": "aff77514-d8c7-4c52-adb1-0ee1de55e284",
+          "format": {
+            "page_icon": "🏔",
+            "block_locked": false,
+            "block_locked_by": "4b723c12-e06d-4354-9951-aef27cabf6f1",
+            "page_cover_position": 0.6
+          },
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f"
+            },
+            {
+              "role": "reader",
+              "type": "public_permission"
+            }
+          ],
+          "created_by": "bd3552d4-2e14-448e-b60d-8d0fe921a4ae",
+          "created_time": 1604040220710,
+          "last_edited_by": "bd3552d4-2e14-448e-b60d-8d0fe921a4ae",
+          "last_edited_time": 1604544480000,
+          "parent_id": "3ea7938e-8bf6-4e62-b6bd-cc394d53c099",
+          "parent_table": "space",
+          "alive": true,
+          "copied_from": "be259732-30cb-4924-b294-8d4456be75c8",
+          "created_by_table": "notion_user",
+          "created_by_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "shard_id": 245913,
+          "space_id": "3ea7938e-8bf6-4e62-b6bd-cc394d53c099"
+        }
+      },
+      "86e0e84c-6dd7-401b-a864-59e452efc63a": {
+        "role": "editor",
+        "value": {
+          "id": "86e0e84c-6dd7-401b-a864-59e452efc63a",
+          "version": 45,
+          "type": "collection_view_page",
+          "view_ids": [
+            "05c39871-342b-45b7-aa83-687c57a1bb70",
+            "d98a7437-35d7-49ed-82b8-73f9eddc55f5",
+            "4d9fe048-e223-475b-ae63-2e041943e385",
+            "d93931f6-710d-447a-a1e5-65006289fca8"
+          ],
+          "collection_id": "e9b8606c-131f-406a-a52f-b854d0618cb5",
+          "format": {
+            "block_locked": false,
+            "block_locked_by": "204e031f-f12d-445c-ba1d-df7a7bbebfbc"
+          },
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f"
+            }
+          ],
+          "created_by": "09bf218a-16a3-4fba-b398-46b75242a1fe",
+          "created_time": 1604113207241,
+          "last_edited_by": "09bf218a-16a3-4fba-b398-46b75242a1fe",
+          "last_edited_time": 1604972760000,
+          "parent_id": "3ea7938e-8bf6-4e62-b6bd-cc394d53c099",
+          "parent_table": "space",
+          "alive": true,
+          "copied_from": "60fef2a5-653c-4b49-aa46-442a649fc745",
+          "created_by_table": "notion_user",
+          "created_by_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "shard_id": 245913,
+          "space_id": "3ea7938e-8bf6-4e62-b6bd-cc394d53c099"
+        }
+      },
+      "b2b279ce-c8ab-490e-baef-ec595ea9bfd9": {
+        "role": "editor",
+        "value": {
+          "id": "b2b279ce-c8ab-490e-baef-ec595ea9bfd9",
+          "version": 97,
+          "type": "page",
+          "properties": {
+            "title": [
+              [
+                "标题"
+              ]
+            ]
+          },
+          "content": [
+            "7cc71ff7-a572-467d-801c-79597e32a1a0",
+            "70f2609a-766e-4639-adf3-f5ea380e9f2b",
+            "038cd648-9cd9-46a1-95bb-f20c5585cb7b",
+            "3eb91d83-d042-4b50-8074-69c4e4d324d7",
+            "572ad695-7584-4069-8434-9431e7efe237",
+            "86e0e84c-6dd7-401b-a864-59e452efc63a",
+            "7c5687b2-c58e-4551-8c61-ebf8dd356dce",
+            "3a30f711-48d3-46cb-b58b-68a51ca13c28"
+          ],
+          "format": {
+            "page_icon": "⭐"
+          },
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f"
+            }
+          ],
+          "created_time": 1605770100000,
+          "last_edited_time": 1607568360000,
+          "parent_id": "3ea7938e-8bf6-4e62-b6bd-cc394d53c099",
+          "parent_table": "space",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "d740c9d4-52d0-4722-9a08-048e09e88f2f",
+          "shard_id": 245913,
+          "space_id": "3ea7938e-8bf6-4e62-b6bd-cc394d53c099"
+        }
+      }
+    },
+    "collection": {
+      "e9b8606c-131f-406a-a52f-b854d0618cb5": {
+        "role": "editor",
+        "value": {
+          "id": "e9b8606c-131f-406a-a52f-b854d0618cb5",
+          "version": 68,
+          "name": [
+            [
+              "笔记软件开发路线"
+            ]
+          ],
+          "description": [
+            [
+              "Use this template to track all of your project work.\n\n⛰ "
+            ],
+            [
+              "Epics",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " are large overarching initiatives.\n🏃‍♂️ "
+            ],
+            [
+              "Sprints",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " are time-bounded pushes to complete a set of tasks.\n🔨 "
+            ],
+            [
+              "Tasks",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " are the actions that make up epics.\n🐞 "
+            ],
+            [
+              "Bugs",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " are tasks to fix things.\n\n"
+            ],
+            [
+              "↓",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " Click "
+            ],
+            [
+              "By Status",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " to isolate epics, sprints, tasks or bugs. Sort tasks by status, engineer or product manager. Switch to calendar view to see when work is scheduled to be completed."
+            ]
+          ],
+          "schema": {
+            "$v1Q": {
+              "name": "Engineers",
+              "type": "person"
+            },
+            "6=yp": {
+              "name": "Tasks",
+              "type": "relation",
+              "property": "L[K<",
+              "collection_id": "e9b8606c-131f-406a-a52f-b854d0618cb5"
+            },
+            "9dB^": {
+              "name": "Type",
+              "type": "select",
+              "options": [
+                {
+                  "id": "ca62f85e-a4ac-474f-b493-82d2df005dff",
+                  "color": "green",
+                  "value": "Epic ⛰️"
+                },
+                {
+                  "id": "3f806034-9c48-4519-871e-60c9c32d73d8",
+                  "color": "yellow",
+                  "value": "Task 🔨"
+                },
+                {
+                  "id": "1497e06a-abf3-4c81-a619-debfa0c70621",
+                  "color": "red",
+                  "value": "Bug 🐞"
+                }
+              ]
+            },
+            "L[K<": {
+              "name": "Epic",
+              "type": "relation",
+              "property": "6=yp",
+              "collection_id": "e9b8606c-131f-406a-a52f-b854d0618cb5"
+            },
+            "_G+l": {
+              "name": "Timeline",
+              "type": "date"
+            },
+            "g;F}": {
+              "name": "Which",
+              "type": "select",
+              "options": [
+                {
+                  "id": "qs?|",
+                  "value": "Notion"
+                }
+              ]
+            },
+            "iwS0": {
+              "name": "Created",
+              "type": "created_time"
+            },
+            "ljOw": {
+              "name": "Function",
+              "type": "select",
+              "options": [
+                {
+                  "id": "91d93ed8-4db0-4162-b233-512c7535d22c",
+                  "color": "pink",
+                  "value": "Usage"
+                },
+                {
+                  "id": "0c080b5b-43ba-4c90-8250-7c33fd1365c8",
+                  "color": "brown",
+                  "value": "Collaboration"
+                },
+                {
+                  "id": "a7246715-3ab7-4c67-8780-06379f48d50a",
+                  "color": "red",
+                  "value": "Features"
+                },
+                {
+                  "id": "0c0fe9e4-4b0b-4e09-bd8a-b473afd74d2c",
+                  "color": "gray",
+                  "value": "Admin&Security"
+                },
+                {
+                  "id": "4719fad7-38fa-4efd-8cad-9479bf03cade",
+                  "color": "default",
+                  "value": "Support"
+                }
+              ]
+            },
+            "ma:W": {
+              "name": "Product Manager",
+              "type": "person"
+            },
+            "{MEq": {
+              "name": "Priority",
+              "type": "select",
+              "options": [
+                {
+                  "id": "09fy",
+                  "color": "red",
+                  "value": "P1 🔥"
+                },
+                {
+                  "id": "e1b2f058-4989-4dee-a873-4e88f58d4d0a",
+                  "color": "orange",
+                  "value": "P2"
+                },
+                {
+                  "id": "0bb46e0b-be4f-4b9c-87c2-b990868e9f92",
+                  "color": "yellow",
+                  "value": "P3"
+                },
+                {
+                  "id": "1a5512c5-39ad-4fb7-959f-68f596849eeb",
+                  "color": "green",
+                  "value": "P4"
+                },
+                {
+                  "id": "28c7cce9-7163-4407-9569-3f070da82ad1",
+                  "color": "blue",
+                  "value": "P5"
+                }
+              ]
+            },
+            "|F4-": {
+              "name": "Status",
+              "type": "select",
+              "options": [
+                {
+                  "id": "c224a5a5-c284-431e-a65d-90a71712bcac",
+                  "color": "red",
+                  "value": "Not Started"
+                },
+                {
+                  "id": "ab7c2b08-ed87-4c04-b30f-fa62440f75d5",
+                  "color": "yellow",
+                  "value": "In Progress"
+                },
+                {
+                  "id": "c410e525-9a47-4ed2-9e72-299abee65575",
+                  "color": "green",
+                  "value": "Complete 🙌"
+                }
+              ]
+            },
+            "title": {
+              "name": "Projects",
+              "type": "title"
+            }
+          },
+          "icon": "🚘",
+          "format": {
+            "collection_page_properties": [
+              {
+                "visible": false,
+                "property": "iwS0"
+              },
+              {
+                "visible": false,
+                "property": "9dB^"
+              },
+              {
+                "visible": false,
+                "property": "|F4-"
+              },
+              {
+                "visible": false,
+                "property": "6=yp"
+              },
+              {
+                "visible": false,
+                "property": "L[K<"
+              },
+              {
+                "visible": false,
+                "property": "{MEq"
+              },
+              {
+                "visible": false,
+                "property": "_G+l"
+              },
+              {
+                "visible": false,
+                "property": "ma:W"
+              },
+              {
+                "visible": false,
+                "property": "$v1Q"
+              },
+              {
+                "visible": true,
+                "property": "ljOw"
+              },
+              {
+                "visible": true,
+                "property": "g;F}"
+              }
+            ]
+          },
+          "parent_id": "86e0e84c-6dd7-401b-a864-59e452efc63a",
+          "parent_table": "block",
+          "alive": true,
+          "copied_from": "6d8ccebc-b242-428b-bb4a-57b9b5700385",
+          "template_pages": [
+            "10e231cd-2206-4c08-afcf-e2a00633d31e",
+            "b7cf204c-a44d-46e2-8393-52d8e9265663",
+            "03ca9b9a-f507-4cd3-99aa-9534d1862f28"
+          ],
+          "migrated": true
+        }
+      },
+      "aff77514-d8c7-4c52-adb1-0ee1de55e284": {
+        "role": "editor",
+        "value": {
+          "id": "aff77514-d8c7-4c52-adb1-0ee1de55e284",
+          "version": 141,
+          "name": [
+            [
+              "优秀的开源项目"
+            ]
+          ],
+          "description": [
+            [
+              "个人收集的优先的开源项目"
+            ]
+          ],
+          "schema": {
+            ">FiG": {
+              "name": "场景",
+              "type": "select",
+              "options": [
+                {
+                  "id": "e05e8b9a-a3f6-47b5-8472-908340210286",
+                  "color": "yellow",
+                  "value": "扩展库"
+                },
+                {
+                  "id": "87e26679-863d-4ce8-a89a-78817ebb202b",
+                  "color": "brown",
+                  "value": "开发工具"
+                },
+                {
+                  "id": "ced036bd-c413-4132-b571-fff274964533",
+                  "color": "orange",
+                  "value": "应用服务"
+                },
+                {
+                  "id": "1959ae5d-396f-4644-aed3-f761be6f41e8",
+                  "color": "pink",
+                  "value": "开发框架"
+                },
+                {
+                  "id": "89bff8ab-e6a5-4c11-81a4-82325beab7c2",
+                  "color": "purple",
+                  "value": "桌面应用"
+                },
+                {
+                  "id": "91a038d0-cd20-4b87-9267-53a204725fb5",
+                  "color": "gray",
+                  "value": "移动应用"
+                },
+                {
+                  "id": "9a285165-05d5-4ced-8c30-1b6b1eaf2c2a",
+                  "color": "red",
+                  "value": "工具插件"
+                }
+              ]
+            },
+            "Cwyt": {
+              "name": "备注",
+              "type": "text"
+            },
+            "WdIZ": {
+              "name": "编程语言",
+              "type": "multi_select",
+              "options": [
+                {
+                  "id": "e05ee8eb-3622-4afc-a3b3-e2b094ddf1b9",
+                  "color": "pink",
+                  "value": "C++"
+                },
+                {
+                  "id": "af73b5e1-5363-47db-9ab6-844c6acec5c4",
+                  "color": "green",
+                  "value": "Golang"
+                },
+                {
+                  "id": "5baf874d-d92e-4b57-9d38-39a408a01d5d",
+                  "color": "blue",
+                  "value": "第三方工具"
+                },
+                {
+                  "id": "61bf8b7a-8be4-4baf-9296-34f61dda8276",
+                  "color": "pink",
+                  "value": "C#"
+                },
+                {
+                  "id": "980e2ccf-c7bf-45c7-866b-ac36ba1f938e",
+                  "color": "purple",
+                  "value": "Typescript"
+                },
+                {
+                  "id": "8cbd2a80-7ff6-4592-9dee-db0320c7e5da",
+                  "color": "red",
+                  "value": "Java"
+                },
+                {
+                  "id": "0ee5e42c-74c8-4854-b063-a5c5b5b21b79",
+                  "color": "yellow",
+                  "value": "HTML"
+                },
+                {
+                  "id": "5e6f9495-4690-4266-8774-4b0075b14695",
+                  "color": "orange",
+                  "value": "PHP"
+                },
+                {
+                  "id": "0121d3ee-9407-49cb-878b-0ca22f81e5fc",
+                  "color": "brown",
+                  "value": "Javascript"
+                },
+                {
+                  "id": "e4eb89bc-49f8-4c83-8ece-afa06671a3f0",
+                  "color": "default",
+                  "value": "Vue"
+                },
+                {
+                  "id": "938bcc05-5e35-4f27-9653-bd3f2e315618",
+                  "color": "gray",
+                  "value": "C"
+                }
+              ]
+            },
+            "v?sB": {
+              "name": "开源地址",
+              "type": "url"
+            },
+            "vZ5T": {
+              "name": "标签",
+              "type": "multi_select",
+              "options": [
+                {
+                  "id": "d23bda72-3e08-415b-b2a0-fa00313f852c",
+                  "color": "green",
+                  "value": "MIT"
+                },
+                {
+                  "id": "6dfe7753-1695-4666-a8ad-2e8a5b5af613",
+                  "color": "purple",
+                  "value": "AGPL3.0"
+                },
+                {
+                  "id": "f83cb996-ce5d-4092-8490-9bd082b7e25b",
+                  "color": "yellow",
+                  "value": "BSD-3"
+                },
+                {
+                  "id": "204d901b-3ee6-46a3-854a-8b452a15cb56",
+                  "color": "orange",
+                  "value": "Apache2.0"
+                },
+                {
+                  "id": "bc707673-f9e6-4fd9-9c22-fb917a5492da",
+                  "color": "red",
+                  "value": "自定义协议"
+                },
+                {
+                  "id": "abd549d8-c9d7-4d8c-a5d5-6ac0fb7eac49",
+                  "color": "default",
+                  "value": "GNU"
+                }
+              ]
+            },
+            "title": {
+              "name": "Name",
+              "type": "title"
+            }
+          },
+          "icon": "🏔",
+          "cover": "/images/page-cover/nasa_robert_stewart_spacewalk.jpg",
+          "format": {
+            "collection_cover_position": 0.9,
+            "collection_page_properties": [
+              {
+                "visible": true,
+                "property": "Cwyt"
+              },
+              {
+                "visible": true,
+                "property": "vZ5T"
+              },
+              {
+                "visible": false,
+                "property": "v?sB"
+              },
+              {
+                "visible": false,
+                "property": ">FiG"
+              },
+              {
+                "visible": false,
+                "property": "WdIZ"
+              },
+              {
+                "visible": true,
+                "property": "Ad|d"
+              },
+              {
+                "visible": true,
+                "property": "[z]|"
+              }
+            ]
+          },
+          "parent_id": "ab3505fc-c4d9-4b8c-b0a2-3957d5895ba8",
+          "parent_table": "block",
+          "alive": true,
+          "copied_from": "8082d469-3cfe-4639-adaf-d19d4a919b3f",
+          "migrated": true
+        }
+      }
+    }
+  }
+}
