@@ -7,6 +7,7 @@ import (
 	"github.com/bwmarrin/snowflake"
 	"github.com/go-pg/pg/v10"
 	"github.com/go-pg/pg/v10/orm"
+	"io/ioutil"
 	"log"
 	"math/rand"
 	"src/model"
@@ -63,41 +64,36 @@ func main() {
 			log.Println(err.Error())
 		}
 	}()
-	err = db.Model(&model.BlockValue{}).CreateTable(&orm.CreateTableOptions{
-		IfNotExists: true,
-	})
-	if err != nil {
-		log.Fatal(err)
-	}
-	err = db.Model(&model.PageValue{}).CreateTable(&orm.CreateTableOptions{
+	err = db.Model(&model.Value{}).CreateTable(&orm.CreateTableOptions{
 		IfNotExists: true,
 	})
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	//bytes, err := ioutil.ReadFile("./data/2e22de6b770e4166be301490f6ffd420.json")
-	//if err != nil {
-	//	log.Fatal(err)
-	//	return
-	//}
-	//v := new(model.BlockMap)
-	//err = json.Unmarshal(bytes, v)
-	//if err != nil {
-	//	log.Fatal(err)
-	//	return
-	//}
-	//for _, block := range *v {
-	//	_, err = db.Model(&block.Value).Insert()
-	//	if err != nil {
-	//		log.Fatal(err)
-	//		return
-	//	}
-	//}
+	bytes, err := ioutil.ReadFile("./data/loadPageChunk.json")
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
+	chunkData := new(model.LoadPageChunkData)
+	err = json.Unmarshal(bytes, chunkData)
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
+
+	for _, block := range (*chunkData).RecordMap.Block {
+		_, err = db.Model(&block.Value).Insert()
+		if err != nil {
+			log.Fatal(err)
+			return
+		}
+	}
 	pageSize := 20
 	page := 1
 
-	m := make([]model.BlockValue, pageSize)
+	m := make([]model.Value, pageSize)
 	query := db.Model(&m)
 	query.Offset((page - 1) * pageSize).
 		Where("type='toggle'").

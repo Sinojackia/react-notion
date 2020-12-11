@@ -36,10 +36,25 @@ const (
 	CollectionView BaseValueKind = "collection_view"
 )
 
-type BlockValue struct {
-	tableName         struct{}                 `pg:"block_value"`
-	Type              BaseValueKind            `json:"type"`
+type Block struct {
+	tableName  struct{} `pg:"block"`
+	Role       string   `json:"role"`
+	Value      Value    `json:"value"`
+	Collection struct {
+		Title  []DecorationType            `json:"title"`
+		Types  []CollectionViewType        `json:"types"`
+		Data   map[string][]DecorationType `json:"data"`
+		schema map[string]struct {
+			Name string `json:"name"`
+			Type string `json:"type"`
+		} `json:"schema"`
+	} `json:"collection"`
+}
+
+type Value struct {
+	tableName         struct{}                 `pg:"value"`
 	ID                string                   `json:"id" pg:"id,type:uuid,pk"`
+	Type              BaseValueKind            `json:"type" pg:"type"`
 	Version           int                      `json:"version" pg:"version"`
 	CreatedTime       int64                    `json:"created_time" pg:"created_time,type:int8,default:floor(extract(epoch from now())),notnull"`
 	LastEditedTime    int64                    `json:"last_edited_time" pg:"last_edited_time,type:int8,default:floor(extract(epoch from now())),notnull"`
@@ -59,7 +74,7 @@ type BlockValue struct {
 }
 
 type PageValue struct {
-	BlockValue `json:",inline"`
+	Value      `json:",inline"`
 	Properties struct {
 		Title []DecorationType `json:"title,omitempty"`
 	} `json:"properties"`
@@ -80,7 +95,7 @@ type PageValue struct {
 }
 
 type ContentValue struct {
-	BlockValue `json:",inline"`
+	Value      `json:",inline"`
 	Type       ContentValueType `json:"type"`
 	Properties struct {
 		Source  [][]string       `json:"source"`
@@ -99,15 +114,15 @@ type ContentValue struct {
 }
 
 type ColumnValue struct {
-	BlockValue `json:",inline"`
-	Type       BaseValueKind `json:"type"` // type=column
-	Format     struct {
+	Value  `json:",inline"`
+	Type   BaseValueKind `json:"type"` // type=column
+	Format struct {
 		ColumnRatio int `json:"column_ratio"`
 	} `json:"format"`
 }
 
 type CodeValue struct {
-	BlockValue `json:",inline"`
+	Value      `json:",inline"`
 	Type       BaseValueKind `json:"type"` // type=code
 	Properties struct {
 		Title    []DecorationType `json:"title"`
@@ -116,7 +131,7 @@ type CodeValue struct {
 }
 
 type CalloutValue struct {
-	BlockValue `json:",inline"`
+	Value      `json:",inline"`
 	Type       BaseValueKind `json:"type"` // type=callout
 	Properties struct {
 		Title []DecorationType `json:"title"`
@@ -128,7 +143,7 @@ type CalloutValue struct {
 }
 
 type ToggleValue struct {
-	BlockValue `json:",inline"`
+	Value      `json:",inline"`
 	Type       BaseValueKind `json:"type"` // type=toggle
 	Properties struct {
 		Title []DecorationType `json:"title"`
@@ -136,7 +151,7 @@ type ToggleValue struct {
 }
 
 type BookmarkValue struct {
-	BlockValue `json:",inline"`
+	Value      `json:",inline"`
 	Type       BaseValueKind `json:"type"` // type=bookmark
 	Properties struct {
 		Title       []DecorationType `json:"title"`
@@ -151,7 +166,7 @@ type BookmarkValue struct {
 }
 
 type TweetType struct {
-	BlockValue `json:",inline"`
+	Value      `json:",inline"`
 	Type       BaseValueKind `json:"type"` // type=tweet
 	Properties struct {
 		Source [][]string `json:"source"`
@@ -166,7 +181,7 @@ const (
 )
 
 type TodoValue struct {
-	BlockValue `json:",inline"`
+	Value      `json:",inline"`
 	Type       BaseValueKind `json:"type"` // type=to_do
 	Properties struct {
 		title   []DecorationType `json:"title"`
@@ -175,9 +190,9 @@ type TodoValue struct {
 }
 
 type TableGalleryValue struct {
-	BlockValue `json:",inline"`
-	Type       BaseValueKind `json:"type"` //type=gallery
-	Format     struct {
+	Value  `json:",inline"`
+	Type   BaseValueKind `json:"type"` //type=gallery
+	Format struct {
 		GalleryCover struct {
 			Type string
 		}
@@ -190,9 +205,9 @@ type TableGalleryValue struct {
 }
 
 type TableCollectionValue struct {
-	BlockValue `json:",inline"`
-	Type       BaseValueKind `json:"type"` //type=table
-	Format     struct {
+	Value  `json:",inline"`
+	Type   BaseValueKind `json:"type"` //type=table
+	Format struct {
 		TableWrap       bool
 		TableProperties []struct {
 			Visible  bool
@@ -239,23 +254,7 @@ type CollectionViewType struct {
 	TableCollectionValue
 }
 
-type Block struct {
-	Role       string     `json:"role"`
-	Value      BlockValue `json:"value"`
-	Collection struct {
-		Title  []DecorationType            `json:"title"`
-		Types  []CollectionViewType        `json:"types"`
-		Data   map[string][]DecorationType `json:"data"`
-		schema map[string]struct {
-			Name string `json:"name"`
-			Type string `json:"type"`
-		} `json:"schema"`
-	} `json:"collection"`
-}
-
-type BlockMap map[string]Block
-
-type NotionUserType struct {
+type NotionUser struct {
 	Role  string `json:"role"`
 	Value struct {
 		ID                        string
@@ -266,19 +265,19 @@ type NotionUserType struct {
 		ProfilePhoto              string
 		OnboardingCompleted       bool
 		MobileOnboardingCompleted bool
-	}
+	} `json:"value"`
 }
 
-type RecordMapType struct {
-	Block      BlockMap
-	NotionUser map[string]NotionUserType
+type RecordMap struct {
+	Block      map[string]Block      `json:"block"`
+	NotionUser map[string]NotionUser `json:"notion_user"`
 }
 
 type LoadPageChunkData struct {
-	RecordMap RecordMapType
+	RecordMap RecordMap `json:"record_map"`
 	Cursor    struct {
 		Stack []interface{}
-	}
+	} `json:"cursor"`
 }
 
 type MapPageUrl func(pageId string) string
